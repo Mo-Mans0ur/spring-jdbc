@@ -12,7 +12,7 @@ public class  DepartmentRepository {
     public ArrayList<Department> getAllDepartments(){
         ArrayList<Department> allDepartments = new ArrayList<Department>();
         try {
-            PreparedStatement stmt = DatabaseConnectionManager.getConnection().prepareStatement("SELECT * FROM departments");
+            PreparedStatement stmt = DatabaseConnectionManager.getConnection().prepareStatement("SELECT * FROM employee_departments.department");
             ResultSet rs = stmt.executeQuery();
             while(rs.next()){
                 Department tmp = new Department(

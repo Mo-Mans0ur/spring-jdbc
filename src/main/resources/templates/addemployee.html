@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AddEmployee</title>
+    <link rel="stylesheet" th:href="@{style.css}"  type="text/css">
+
+</head>
+<body>
+<div id="content-div">
+    <!-- main content/body will be here-->
+    <!-- all code above this line is common for all page-->
+
+    <div class="add-employee">
+        <h1>Add Employee</h1>
+        <form action="/add-employee-handler" method="post">
+
+            <label class="label">Employee ID</label>
+            <input type="text" name="employeeId">
+            <br>
+            <label class="label">Full Name</label>
+            <input type="text" name="name">
+            <br>
+            <label class="label">Job title</label>
+            <input type="text" name="job">
+            <br>
+            <label class="label">Manager number</label>
+            <input type="text" name="manager">
+            <br>
+            <label class="label">set Salary</label>
+            <input type="text" name="salary" />
+            <br>
+            <label class="label">set Commission</label>
+            <input type="text" name="commission" />
+            <br>
+            <label class="label">set Department</label>
+            <input type="text" name="department" />
+            <br>
+            <input type="submit" value="Add Employee">
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
